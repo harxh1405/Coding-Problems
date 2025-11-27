@@ -1,0 +1,3 @@
+Recursion use cases:
+1) When you are pre aware about the simplest solution to the problem
+2) Every call does some part of the work and leaves other on recursion 
