@@ -3,7 +3,7 @@
 //i/p:{10,1,2,6,9,5} o/p:false
 
 #include <iostream>
-
+#include<iomanip>
 using namespace std;
 
 bool isSorted(int arr[], int size){
@@ -25,6 +25,6 @@ int main(){
      for(int i=0; i<n; i++){
         cin>>arr[i];
      }
-     cout<<(isSorted(arr,n))?"true":"false";
+     cout<<boolalpha<<isSorted(arr,n);
      return 0;
 }
