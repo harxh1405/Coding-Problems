@@ -1,0 +1,13 @@
+abc
+subsequence can be any sequence of character(s) from the string
+->order is maintained (left to right)
+->We get subsequence by dropping 0 or more characters of string
+->""
+->a
+->b
+->c
+->ab
+->bc
+->ac
+substrings are contiguous sequence of characters obtained from the string
+->Every substring is a subsequence but converse is not true
