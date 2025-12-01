@@ -2,7 +2,7 @@ abc
 subsequence can be any sequence of character(s) from the string
 ->order is maintained (left to right)
 ->We get subsequence by dropping 0 or more characters of string
-->""
+->"" 
 ->a
 ->b
 ->c

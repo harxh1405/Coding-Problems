@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 void removeContagiousDuplicates(string &str, size_t idx=0){
-	if(idx+1>str.size()) return;
+	if(idx+1>str.size()) return;//base case
    //if the first and second char matches
 	if(str[idx]==str[idx+1]){
 		str.erase(idx,1);
