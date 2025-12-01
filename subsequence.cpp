@@ -7,6 +7,7 @@ int subseq(string input, string output[]){
 		return 1;
 	}
 	int smallsize=subseq(input.substr(1),output);
+	//appending the output array
 	for(int i=0; i<smallsize; i++){
 		output[i+smallsize]=input[0]+output[i];
 	}
