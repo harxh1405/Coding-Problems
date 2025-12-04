@@ -1,33 +1,25 @@
 //remove every occurrence of a char by give char/string
 #include <iostream>
+#include<vector>
 using namespace std;
-//stl containers are passed by values
-void removeChar(char ch, string &str, string rep, size_t idx=0){
-	//base case
-	if(idx>str.size()) return;
-	//character found at first index
-    if(str[idx]==ch){
-       str.erase(idx, 1);
-       str.insert(idx,rep);
-  
-       return removeChar(ch, str, rep, idx+rep.length());
+void replace(string &str, string repl, char toReplace,int idx){
+    if(idx==str.size()) return;
+    if(str[idx]== toReplace){
+        str.erase(idx,1);
+        str.insert(idx,repl);
+        return replace(str,repl,toReplace,idx+repl.size());
     }
-    //character not found at first index
-    return removeChar(ch,str,rep, idx+1);
+    return replace(str,repl,toReplace,idx+1);
 }
-int main(){
-
-#ifndef ONLINE_JUDGE
-	freopen("input.txt", "r", stdin);
-	freopen("output.txt", "w", stdout);
-#endif
-	char ch;
-	string str, rep;
-	cin>>ch; //taking character from cin
-	cin.ignore(numeric_limits<streamsize>::max(), '\n');//clearing the buffer
-	getline(cin,str);//taking string input
-	getline(cin,rep);//taking replacement string
-    removeChar(ch,str,rep);
-    cout<<str;
-	return 0;
+int main()
+{ 
+    
+    string input;
+    getline(cin,input);
+    string repl;
+    getline(cin,repl);
+    
+    replace(input,repl,'a',0);
+    cout<<input;
+    return 0;
 }
