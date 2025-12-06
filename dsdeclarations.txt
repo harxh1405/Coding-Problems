@@ -1,0 +1,10 @@
+vector<vector<int>>a=>int arr[5][4];
+vector<vector<int>>v(5,vector<int>(4,0))=>int arr[5][4]={0};
+5->5 vector of integers
+vector<pair<int,int>>v(n);
+for(int i=0; i<n; i++){
+    cin>>v[i].first>>v[i].second;
+}
+sorting any kind of vector
+#include algorithm
+sort(v.begin(),v.end())

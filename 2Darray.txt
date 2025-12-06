@@ -1,3 +1,0 @@
-vector<vector<int>>a=>int arr[5][4];
-vector<vector<int>>v(5,vector<int>(4,0))=>int arr[5][4]={0};
-5->5 vector of integers
