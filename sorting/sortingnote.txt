@@ -1,0 +1,16 @@
+sort function designing
+sort(arr, arr+5, comp)
+where comp is user defined function
+
+sort will sort when comparator returns false
+bool comp(int a, int b){
+    return a>b;
+}
+a=5 b=13 -> no swap
+a=13 b=5 ->swap
+
+Simple way of designing comparators:
+suppose you want x<y<z behaviour,
+return x<y from the comparator function
+
+Here, comp is a function pointer
