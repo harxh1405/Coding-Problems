@@ -1,0 +1,12 @@
+Binary Search -> needs sorted data points
+O(log n)
+inbuilt algorithm for binary search:
+lower_bound(start pointer/iterator, end pointer/iterator, element to search)-> returns the address
+the element being searched otherwise returns the address of the closes higher value. If the value is 
+not present and is higher than all the data points, then it returns the last address of the set
+for c style arrays use it like,
+int *ptr=lower_bound(arr,arr+n,2)
+
+For style containers, use:
+int itr=lower_bound(v.begin(),v.end(),2)
+for sets, use lower_bound() like this-> auto it=s.lower_bound(5)

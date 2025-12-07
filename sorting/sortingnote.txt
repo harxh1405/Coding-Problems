@@ -14,3 +14,6 @@ suppose you want x<y<z behaviour,
 return x<y from the comparator function
 
 Here, comp is a function pointer
+
+sort(arr,arr+5)=> will go to one less than upper bound
+To sort an array, use sort(arr,arr+n)
