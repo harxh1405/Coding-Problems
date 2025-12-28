@@ -18,3 +18,5 @@ kth max
 union and intersection of sorted arrays
 CSUMQ(spoj)
 merge sorted arrays
+merge 2 sorted arrays without extra space
+merge a array after sorting its first n/2 and other n/2 elements seperately
