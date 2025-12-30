@@ -6,3 +6,23 @@
 //stack,queue and priority queues are adapters which can be implemented using different underlying containers like vector,deque,list
 //priority_queue<int,vector<int>,greater<int>> pq; //min heap
 //push(),pop(),top(),empty(),size() are the functions of priority queue
+#include <vector>
+#include <queue>
+using namespace std;
+class Solution {
+  public:
+    int kthSmallest(vector<int> &arr, int k) {
+        // code here
+        int n=arr.size();
+        priority_queue<int,vector<int>,greater<int>>pq;
+        //creating a priority queue
+        for(int i=0;i<n;i++){
+            pq.push(arr[i]);
+        }//O(nlogn)
+        
+        while(--k){
+            pq.pop();
+        }
+        return pq.top();
+    }
+};
