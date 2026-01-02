@@ -24,5 +24,8 @@ majority element using moore's voting algorithm
 only member that appears odd number of times
 missing in array
 2 no odd, remainining even-> find both odd
-
+max sum subarray of size k
+array manipulation
+gcdq problem
+first negative number in window of size k
 
