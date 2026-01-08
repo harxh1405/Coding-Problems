@@ -28,4 +28,5 @@ max sum subarray of size k
 array manipulation
 gcdq problem
 first negative number in window of size k
-
+product of array except itself
+try solving equilibirum point with less space complexity
