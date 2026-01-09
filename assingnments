@@ -30,3 +30,6 @@ gcdq problem
 first negative number in window of size k
 product of array except itself
 try solving equilibirum point with less space complexity
+2 sum
+subarray with maximum product
+subarray with sum=k
