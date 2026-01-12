@@ -1,3 +1,9 @@
 sliding window property
 
 in some cases it is of fixed size and in some cases it may shrink
+
+sliding window ->
+1.fixed size 
+2.variable size=>2 pointer
+
+fixed size->subarray,substring,size k,calculate something from each window
