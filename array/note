@@ -7,3 +7,4 @@ sliding window ->
 2.variable size=>2 pointer
 
 fixed size->subarray,substring,size k,calculate something from each window
+/////////////////
