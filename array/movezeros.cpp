@@ -22,3 +22,21 @@ public:
         solve(nums);
     }
 };
+//better approach
+class Solution {
+public:
+    vector<int> solve(vector<int>&nums){
+        int n=nums.size();
+        int k=0;
+        for(int i=0;i<n;i++){
+            if(nums[i]!=0){
+             swap(nums[i],nums[k]);
+             k++;
+            }
+        }
+        return nums;
+    }
+    void moveZeroes(vector<int>& nums) {
+        solve(nums);
+    }
+};
