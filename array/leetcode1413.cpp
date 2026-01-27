@@ -4,16 +4,12 @@ class Solution {
 public:
     int minStartValue(vector<int>& nums) {
         int n=nums.size();
-        long long i=1;
-        while(true){
-            int sum=i;
-            for(int j=0;j<n;j++){
-               sum+=nums[j];
-               if(sum<1) break;
-            }
-            if(sum>=1) break;
-            i++;
+        int prefix=0;
+        int minprefix=INT_MAX;
+        for(int i=0;i<n;i++){
+            prefix+=nums[i];
+            minprefix=min(minprefix,prefix);
         }
-        return i;
+        return minprefix>0?1:1-minprefix;
     }
 };
