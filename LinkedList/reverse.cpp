@@ -11,7 +11,7 @@ using namespace std;
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        ListNode* prev=nullptr;
+        ListNode* prev=NULL;
         ListNode* curr=head;
         if(curr==NULL) return head;
         ListNode* up=curr->next;
