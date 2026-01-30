@@ -1,25 +1,30 @@
-
-
-
-  struct ListNode {
-      int val;
-      ListNode *next;
+#include <iostream>
+using namespace std;
+ struct ListNode {
+     int val;
+     ListNode *next;
      ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
-     ListNode(int x, ListNode *next) : val(x), next(next) {}
+     ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode *next) : val(x), next(next) {}
  };
- 
+
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
         ListNode* prev=nullptr;
         ListNode* curr=head;
-        while(curr!=nullptr){
-            ListNode* next=curr->next;
+        if(curr==NULL) return head;
+        ListNode* up=curr->next;
+
+        while(curr!=NULL){
             curr->next=prev;
             prev=curr;
-            curr=next;
+            curr=up;
+            if(up!=NULL) up=up->next;
         }
-        return prev;
+
+        head=prev;
+        return head;
+        
     }
 };
