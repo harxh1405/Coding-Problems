@@ -20,6 +20,7 @@ public:
         
     }
 }
+
     string getHappyString(int n, int k) {
         dfs(n);
         if (k > outSet.size()) return "";
