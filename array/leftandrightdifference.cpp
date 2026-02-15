@@ -10,13 +10,13 @@ public:
         int sum=0;
         for(int i=0;i<n;i++){
            sum+=nums[i];
-           prefix.push_back(sum);
+           prefix.push_back(sum);//prefix sum of the array
         }
         int rs=0;
         int total=prefix[n-1];
 
         for(int i=0;i<n;i++){
-            int diff=abs(prefix[i]-(total-rs));
+            int diff=abs(prefix[i]-(total-rs));//difference between the sum of the elements to the left and right of the index i
             ans.push_back(diff);
             rs=prefix[i];
         }
