@@ -24,6 +24,7 @@ int fib(int n){
     else if(n==1) return 1;
 
     int fib1=fib(n-1);
+    
     int fib2=fib(n-2);
 
     return fib1+fib2;
